@@ -10,7 +10,7 @@ Usar o dnsmasq como serviço em docker para resolver os problemas acima.
 
 ## Dupla
 - [Hans Newton](https://github.com/hansnewton);
-- [Victor hugo]().
+- [Victor hugo](https://github.com/victorhugobs).
 
 ## Roadmap
 - [x] Criação do repositorio no github
