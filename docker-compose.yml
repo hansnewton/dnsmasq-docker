@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  dnsmasq:
+    build: ./dnsmasq-config
+    image: projeto-redes-2021.1/dnsmasq-docker:1.0
+    ports: 
+      - "53:53/tcp"
+      - "53:53/udp"
+    privileged: true
+    networks:
+      - dnsmasq-net
+
+
+networks:
+  dnsmasq-net:
+    driver: bridge

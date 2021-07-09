@@ -14,15 +14,15 @@ Usar o dnsmasq como serviço em docker para resolver os problemas acima.
 
 ## Roadmap
 - [x] Criação do repositorio no github
-- [ ] Sem docker (ambiente local)
-    - [ ] instalar dnsmasq
-    - [ ] configurar dnsmasq.conf
-    - [ ] configurar /etc/hosts
-    - [ ] configurar dnsmasq para consulta apenas local
-    - [ ] configurar dnsmasq para consultar na internet
-- [ ] Com docker
-    - [ ] Criação do Dockerfile
-    - [ ] Criação do docker-compose
+- [x] Sem docker (ambiente local)
+    - [x] instalar dnsmasq
+    - [x] configurar dnsmasq.conf
+    - [] configurar /etc/hosts
+    - [x] configurar dnsmasq para consulta apenas local
+    - [x] configurar dnsmasq para consultar na internet
+- [x] Com docker
+    - [x] Criação do Dockerfile
+    - [x] Criação do docker-compose
 
 ## Desenvolvimento
 Clique [aqui](https://github.com/hansnewton/dnsmasq-docker/blob/main/comandos.md) para ver os comandos executados em ambiente local.
