@@ -54,7 +54,9 @@
 - **Configurar dnsmasq.conf**
 
 `echo -e "\n\n# Projeto redes configs.." >> /etc/dnsmasq.conf;`
+
 `echo "log-queries" >> /etc/dnsmasq.conf;`
+
 `echo "conf-dir=/etc/dnsmasq.d/,*.conf" >> /etc/dnsmasq.conf;`
 
 
