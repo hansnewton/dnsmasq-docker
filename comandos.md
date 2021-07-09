@@ -1,24 +1,30 @@
 # 1. Docker e docker-compose
 
 - **Mude para o diretorio deste repositorio:**
+
 `cd dnsmasq-docker/`
 
 - **Iniciar o container**
+
 `docker-compose up -d`
 
 - **Parar o container**
+
 `docker-compose down`
 
 - **Recompilar o Dockerfile**
+
 `docker-compose up --build`
 
 ## Test script (precisa do utilitário `dig` instalado no host)
 
 - **Conceda permissão de escrita para o arquivo teste-script.sh**
+
 `chmod u+x test-script.sh`
 
 - **Com o container do dnsmasq rodando, execute o arquivo**
-`./test-script.sh``
+
+`./test-script.sh`
 
 # 2. Ambiente de máquina virtual
 
@@ -28,18 +34,22 @@
 ## 2.1 comandos
 
 - **Instale vagrant e virtualbox e use o seguinte comando para subir uma vm on the fly**
+
 `vagrant up`
 
 - **Entre na máquina virtual**
+
 `vagrant ssh`
 
 ### Obs.: os dois comandos acima sao opcionais, se nao usar vagrant utilize na sua plataforma. o objetivo até aqui é ter uma VM em funcionamento para os passos seguintes.
 
 - **Atualizar depedencias da VM**
+
 `apt-get update`
 
 - **Instalar depedencias**
-apt-get install -y dnsmasq dnsutils 
+
+`apt-get install -y dnsmasq dnsutils`
 
 - **Configurar dnsmasq.conf**
 
@@ -49,6 +59,8 @@ apt-get install -y dnsmasq dnsutils
 
 
 - **Configuracoes adicionais**
+    
+    
     cat <<EOF > /etc/dnsmasq.d/redes.net 
     no-dhcp-interface=enp0s3
     bogus-priv
@@ -66,10 +78,12 @@ apt-get install -y dnsmasq dnsutils
 
 - **Configurar /etc/hosts**
 
-adicionar a linha abaixo ao arquivo /etc/hosts
+Adicionar a linha abaixo ao arquivo /etc/hosts
+
 `192.168.1.156 www.google.com google`
 
 - **Reinicar dnsmasq**
+
 `systemctl restart dnsmasq`
 
 ## 3 Cenários
