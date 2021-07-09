@@ -63,7 +63,7 @@
 - **Configuracoes adicionais**
     
     
-    cat <<EOF > /etc/dnsmasq.d/redes.net 
+    `cat <<EOF > /etc/dnsmasq.d/redes.net 
     no-dhcp-interface=enp0s3
     bogus-priv
     domain=redes.lan
@@ -76,7 +76,7 @@
     no-poll
     server=8.8.8.8
     server=8.8.4.4
-    EOF
+    EOF`
 
 - **Configurar /etc/hosts**
 
