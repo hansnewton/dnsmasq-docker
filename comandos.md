@@ -62,21 +62,22 @@
 
 - **Configuracoes adicionais**
     
-    
-    `cat <<EOF > /etc/dnsmasq.d/redes.net 
-    no-dhcp-interface=enp0s3
-    bogus-priv
-    domain=redes.lan
-    expand-hosts
-    #no-hosts
-    #addn-hosts=/etc/hostnames.txt
-    local=/redes.lan/
-    domain-needed
-    no-resolv
-    no-poll
-    server=8.8.8.8
-    server=8.8.4.4
-    EOF`
+```bash
+cat <<EOF > /etc/dnsmasq.d/redes.net 
+no-dhcp-interface=enp0s3
+bogus-priv
+domain=redes.lan
+expand-hosts
+#no-hosts
+#addn-hosts=/etc/hostnames.txt
+local=/redes.lan/
+domain-needed
+no-resolv
+no-poll
+server=8.8.8.8
+server=8.8.4.4
+EOF
+```
 
 - **Configurar /etc/hosts**
 
