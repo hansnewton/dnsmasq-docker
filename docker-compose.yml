@@ -3,6 +3,7 @@ version: "3.9"
 services:
   dnsmasq:
     build: ./dnsmasq-config
+    container_name: dnsmasq-docker
     image: projeto-redes-2021.1/dnsmasq-docker:1.0
     ports: 
       - "53:53/tcp"
@@ -14,4 +15,5 @@ services:
 
 networks:
   dnsmasq-net:
+    name: dnsmasq-network
     driver: bridge
