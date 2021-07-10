@@ -26,6 +26,16 @@
 
 `./test-script.sh`
 
+## Deseja incluir outros hostnames/IPs/Entradas DNS ?
+
+Alterar arquivo `hostnames.txt` com as informações
+
+## Deseja que o DNSMASQ-DOCKER seja seu resolvedor de DNS padrao?
+
+Alterar o arquivo /etc/resolv.conf e incluir o registro a seguir no início sem `#`:
+
+`nameserver 127.0.0.1`
+
 # 2. Ambiente de máquina virtual
 
 - dns server : Debian 10 (buster)

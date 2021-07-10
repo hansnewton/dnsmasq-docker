@@ -1,0 +1,6 @@
+172.16.0.1 mysql.redes.lan
+172.16.0.2 work.redes.lan
+172.16.0.3 java.redes.lan
+172.16.0.4 wildfly
+
+172.16.0.5 www.globo.com

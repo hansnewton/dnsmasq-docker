@@ -10,6 +10,8 @@ WORKDIR /app
 # copia arquivos utilizados
 COPY ./start.sh /app
 
+COPY ./hostnames.txt /app
+
 # permissao de escrita
 RUN chmod u+x start.sh
 
@@ -33,7 +35,7 @@ bogus-priv\n\
 domain=redes.lan\n\
 expand-hosts\n\
 #no-hosts\n\
-#addn-hosts=/etc/hostnames.txt\n\
+addn-hosts=/app/hostnames.txt\n\
 local=/redes.lan/\n\
 domain-needed\n\
 no-resolv\n\

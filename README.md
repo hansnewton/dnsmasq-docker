@@ -17,7 +17,7 @@ Usar o dnsmasq como serviço em docker para resolver os problemas acima.
 - [x] Sem docker (ambiente local)
     - [x] instalar dnsmasq
     - [x] configurar dnsmasq.conf
-    - [] configurar /etc/hosts
+    - [x] configurar /etc/hosts
     - [x] configurar dnsmasq para consulta apenas local
     - [x] configurar dnsmasq para consultar na internet
 - [x] Com docker

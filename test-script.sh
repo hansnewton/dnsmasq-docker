@@ -1,5 +1,31 @@
+echo "Check if local services respond to dns queries"
+
+echo "Query 'mysql.redes.lan'. Expected response value: 172.16.0.1"
+nslookup mysql.redes.lan localhost
+sleep 1
+
+echo "Query 'work.redes.lan'. Expected response value: 172.16.0.2"
+nslookup work.redes.lan localhost
+sleep 1
+
+echo "Query 'java.redes.lan'. Expected response value: 172.16.0.3"
+nslookup java.redes.lan localhost
+sleep 1
+
+echo "Query 'wildfly'. Expected response value: 172.16.0.4"
+nslookup wildfly 127.0.0.1
+sleep 1
+
+echo "Query 'wildfly.redes.lan'. Expected response value: 172.16.0.4"
+nslookup wildfly.redes.lan 127.0.0.1
+sleep 1
+
+echo "Query 'www.globo.com'. Expected response value: 172.16.0.5"
+nslookup www.globo.com localhost
+sleep 1
 
 
+echo "Cheking query time response for www.google.com."
 
 echo "Check query time using google DNS"
 
