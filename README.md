@@ -1,6 +1,9 @@
 # DNSMASQ-DOCKER
 Projeto da disciplina de Redes de Computadores DCCMAPI 2021.1
 
+## Licenciamento
+Este projeto é distribuído como um software de código aberto, sob a [Licença MIT](https://github.com/hansnewton/dnsmasq-docker/blob/main/LICENSE).
+
 ## Problema
 - Despadronização de acesso a urls locais;
 - Demora por resolução de nomes.
@@ -9,8 +12,8 @@ Projeto da disciplina de Redes de Computadores DCCMAPI 2021.1
 Usar o dnsmasq como serviço em docker para resolver os problemas acima.
 
 ## Dupla
-- [Hans Newton](https://github.com/hansnewton);
-- [Victor hugo](https://github.com/victorhugobs).
+- [Hans Cantanhede](https://github.com/hansnewton);
+- [Victor Silva](https://github.com/victorhugobs).
 
 ## Roadmap
 - [x] Criação do repositorio no github
